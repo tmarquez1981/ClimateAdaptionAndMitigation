@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css"
+          href="{% static "css/ClimateAdaptationAndMitigation.css" %}" >
+  </head>
+  <body ng-app="ClimateAdaptationAndMitigation.demo">
+    <!--this is where views are injected -->
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+
+    <h1> Climate Adaptaton and Mitigation </h1>
+    <svg width="960" height="600"></svg>
+
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="{% static "/js/ClimateAdaptationAndMitigation.js" %}"></script>
+    <!--<script src="{% static "/js/entity.directive.js" %}"></script> -->
+    <script src="{% static "/js/ClimateAdaptationAndMitigation.config.js" %}"></script>
+
+  </body>
+</html>
